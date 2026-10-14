@@ -1,0 +1,17 @@
+<form class="formular" method="post" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+  <div class="formular__radek">
+    <label>Příjezd <input name="prijezd" type="date" required></label>
+    <label>Odjezd <input name="odjezd" type="date" required></label>
+  </div>
+  <div class="formular__radek">
+    <label>Počet osob <select name="osoby">{% for n in range(1, 11) %}<option{% if n == 2 %} selected{% endif %}>{{ n }}</option>{% endfor %}</select></label>
+    <label>Apartmán <select name="apartman"><option>Je mi to jedno</option>{% for a in data.pension.apartmany %}<option>{{ a }}</option>{% endfor %}</select></label>
+  </div>
+  <label>Jméno <input name="jmeno" autocomplete="name" required></label>
+  <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+  <label>Zpráva <textarea name="zprava" rows="3" placeholder="Děti, pes, pozdější příjezd…"></textarea></label>
+  <div class="past" aria-hidden="true"><label>Nevyplňovat <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <button type="submit">Odeslat poptávku</button>
+  <p class="formular-stav" role="status" aria-live="polite"></p>
+</form>

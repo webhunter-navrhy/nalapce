@@ -1,0 +1,46 @@
+{
+ "slug": "nalapce",
+ "zdroj_url": null,
+ "firma": "Pension Na Lapce (na portálech „Apartmány Na Lapce“)",
+ "obor": ["ubytování", "apartmány", "horské ubytování Šumava"],
+ "mesto": "Kvilda (Šumava)",
+ "ico": "47220554",
+ "ares": {"ico": "47220554", "nazev": "Ing. Pavel Karvánek", "sidlo": "č.p. 80, 384 93 Kvilda", "zdroj": "ARES"},
+ "kontakty": {"jmeno": "Ing. Pavel Karvánek", "email": "novotherm@seznam.cz", "telefon": "602 223 037 (zveřejněný na hotely.cz a ceskehory.cz)", "adresa": "Kvilda 80, 384 93 Kvilda", "gps": "49.019991 N, 13.575591 E"},
+ "cilova_skupina": "rodiny s dětmi, běžkaři a lyžaři v zimě, turisté a cyklisté v létě, starší páry (podle recenzí)",
+ "ton": "klidný, rodinný, horský; žádný hotelový luxus",
+ "logo": null,
+ "barvy": {"poznamka": "klient nemá logo ani paletu; barvy odvozené z domu a místa: krémová fasáda, tmavé dřevo balkonů, zelené kachle kamen v apartmánu, oranžové turistické cedule NP Šumava", "doporucene": {"bg": "#F3EEE3", "text": "#22281F", "zelena": "#3F5E54", "drevo": "#6A4A30", "cedule": "#D9622B"}},
+ "fotky": [
+  {"soubor": "zima-dum.jpg", "puvod": "Booking.com (penzion-restaurace.cz) 622673490", "rozliseni": "1400x1050"},
+  {"soubor": "zima-dum-les.jpg", "puvod": "Booking.com 622673435", "rozliseni": "1400x1050"},
+  {"soubor": "leto-dum.jpg", "puvod": "hotely.cz 40066883", "rozliseni": "1920x1440"},
+  {"soubor": "jaro-terasa.jpg", "puvod": "Booking.com 622673384", "rozliseni": "1400x1050"},
+  {"soubor": "terasa-zima.jpg", "puvod": "Booking.com 622673364", "rozliseni": "1400x1050"},
+  {"soubor": "terasa-stul.jpg", "puvod": "Booking.com 622673410", "rozliseni": "1400x1050"},
+  {"soubor": "cesta-podzim.jpg", "puvod": "Booking.com 622673507", "rozliseni": "1400x1050"},
+  {"soubor": "rozcestnik.jpg", "puvod": "Booking.com 623453506", "rozliseni": "1400x1050"},
+  {"soubor": "kamna.jpg ... interiéry", "puvod": "hotely.cz 41318476–41318484, rooms 16022641/45", "rozliseni": "1600x1600"}
+ ],
+ "fakta": [
+  {"fakt": "Adresa Kvilda 80, 384 93 Kvilda; provozovatel Ing. Pavel Karvánek, IČO 47220554", "zdroj": "ARES, hotely.cz"},
+  {"fakt": "Klidné místo s velkým pozemkem nad Kvildou, cca 1 100 m n. m., GPS 49.019991 N, 13.575591 E", "zdroj": "ceskehory.cz (archivní prezentace)"},
+  {"fakt": "Běžkařské tratě přímo u pozemku, sjezdovka cca 500 m (Ski Kvilda)", "zdroj": "ceskehory.cz, hotely.cz"},
+  {"fakt": "Čtyři prostorné apartmány Stela, Viktorie, Sofie a Richard, v každém obývací pokoj s LCD TV a plně vybavená kuchyň (velká lednice s mrazákem, trouba, mikrovlnka, rychlovarná konvice)", "zdroj": "hotely.cz popis (archivní ceskehory.cz uvádí 2× čtyřlůžkový + 1× dvoulůžkový – ověřit u klienta)"},
+  {"fakt": "Apartmán 25 m² pro 4 osoby (2 samostatná lůžka + manželská postel); apartmán 25 m² pro 2 osoby s manželskou postelí a kuchyňkou", "zdroj": "hotely.cz pokoje"},
+  {"fakt": "Sauna pro hosty zdarma, Wi-Fi zdarma, parkování na pozemku zdarma (10 míst), zahrada, terasa, úschovna kol, dětská postýlka", "zdroj": "hotely.cz vybavení, Booking (penzion-restaurace.cz)"},
+  {"fakt": "Příjezd 15:00–18:00 (pozdější příjezd po domluvě, možný samostatný příjezd), odjezd do 10:00; poplatek z pobytu 25 Kč/osoba/noc od 18 let", "zdroj": "hotely.cz"},
+  {"fakt": "Hodnocení 9,6/10 z 9 hodnocení hostů (čistota 10, komfort 10, poměr cena/výkon 9,1, personál 9,5)", "zdroj": "hotely.cz"},
+  {"fakt": "Kvilda je nejvýše položená obec v ČR; v obci infocentrum, pošta, horská služba, bankomat, půjčovny, autobus do Vimperka, Tábora a Prahy; restaurace v centru (nejbližší cca 700 m)", "zdroj": "hotely.cz popis"},
+  {"fakt": "Kašperské Hory cca 25 km, Vimperk cca 23 km", "zdroj": "hotely.cz"},
+  {"fakt": "Vzdálenosti vzdušnou čarou od domu: Jezerní slať 2,2 km, Filipova Huť 4,3 km, Horská Kvilda 4,4 km, Pramen Vltavy 5,2 km, Modrava 5,8 km, Bučina 6,0 km, Chalupská slať 6,6 km", "zdroj": "výpočet z GPS domu a souřadnic OpenStreetMap (Nominatim)"}
+ ],
+ "chybi": [
+  "aktuální počet apartmánů a jejich kapacita (portály se liší: 4 × 4 lůžka vs. 2 × 4 + 1 × 2) a které fotky patří ke kterému apartmánu",
+  "ceník (sezóny, minimální délka pobytu, záloha)",
+  "originální fotky ve vyšším rozlišení (teď z ubytovacích portálů)",
+  "logo, pokud nějaké máte",
+  "odkaz na rezervace (Booking apod.), pokud je chcete na webu",
+  "krátké představení hostitelů (volitelné)"
+ ]
+}

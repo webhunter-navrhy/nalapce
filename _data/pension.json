@@ -1,0 +1,25 @@
+{
+  "apartmany": ["Stela", "Viktorie", "Sofie", "Richard"],
+  "fakta": [
+    {"k": "Adresa", "v": "Kvilda 80, nad obcí, velký pozemek"},
+    {"k": "Nadmořská výška", "v": "cca 1 100 m"},
+    {"k": "Sauna", "v": "pro hosty zdarma"},
+    {"k": "Parkování", "v": "na vlastním pozemku, 10 míst, zdarma"},
+    {"k": "Wi-Fi", "v": "zdarma"},
+    {"k": "Příjezd", "v": "15:00–18:00, později po domluvě"},
+    {"k": "Odjezd", "v": "do 10:00"}
+  ],
+  "kuchyn": ["velká lednice s mrazákem", "trouba", "mikrovlnná trouba", "rychlovarná konvice"],
+  "vybaveni": ["obývací pokoj s LCD televizí", "zahrada a terasa", "úschovna kol", "dětská postýlka na vyžádání", "topení"],
+  "typy": [
+    {"nazev": "Apartmán pro 4", "detail": "25 m², ložnice se dvěma samostatnými lůžky a manželskou postelí"},
+    {"nazev": "Apartmán pro 2", "detail": "25 m², manželská postel a vlastní kuchyňka"}
+  ],
+  "hodnoceni": {"celkem": "9,6", "pocet": 9, "zdroj": "Hotely.cz", "url": "https://www.hotely.cz/apartmany-na-lapce-kvilda",
+    "dilci": [{"k": "Čistota", "v": "10"}, {"k": "Komfort", "v": "10"}, {"k": "Personál", "v": "9,5"}, {"k": "Cena/výkon", "v": "9,1"}]},
+  "kvilda": ["informační centrum", "pošta", "Horská služba", "bankomat", "půjčovny vybavení", "autobus do Vimperka, Tábora a Prahy"],
+  "sezony": {
+    "zima": {"nadpis": "V zimě", "text": "Běžkařské tratě vedou přímo kolem pozemku, sjezdovka Ski Kvilda je asi 500 metrů od domu. Po návratu z mrazu čeká sauna.", "foto": "zima-dum.jpg", "alt": "Pension Na Lapce v zimě, zasněžený dům pod smrkovým lesem"},
+    "leto": {"nadpis": "V létě", "text": "Pěšky nebo na kole k šumavským slatím a k prameni Vltavy. Kola schováte v úschovně, večer posedíte na terase nebo na zahradě.", "foto": "leto-dum.jpg", "alt": "Pension Na Lapce v létě, dům s dřevěným balkonem a zahradou"}
+  }
+}

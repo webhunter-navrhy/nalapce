@@ -1,0 +1,56 @@
+{
+  "slug": "nalapce",
+  "nazev": "Pension Na Lapce",
+  "url": "https://webhunter-navrhy.github.io/nalapce/",
+  "base": "/nalapce/",
+  "lang": "cs",
+  "popis": "Pension Na Lapce – apartmány s kuchyní a saunou na klidném místě nad Kvildou na Šumavě, běžkařské tratě přímo u pozemku, sjezdovka 500 m.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "zima-dum.jpg",
+  "logo": "",
+  "theme_color": "#F3EEE3",
+  "typ": "LodgingBusiness",
+  "ico": "47220554",
+  "kontakt": {
+    "email": "novotherm@seznam.cz",
+    "telefon": "+420 602 223 037",
+    "adresa": {
+      "ulice": "Kvilda 80",
+      "psc": "384 93",
+      "mesto": "Kvilda",
+      "zeme": "CZ"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Poptávka pobytu – Pension Na Lapce"
+  },
+  "nav": [
+    {
+      "text": "Apartmány",
+      "href": "#apartmany"
+    },
+    {
+      "text": "Okolí",
+      "href": "#okoli"
+    },
+    {
+      "text": "Kvilda",
+      "href": "#kvilda"
+    },
+    {
+      "text": "Poptávka",
+      "href": "#poptavka"
+    }
+  ],
+  "geo": {
+    "lat": 49.019991,
+    "lon": 13.575591
+  },
+  "provozovatel": "Ing. Pavel Karvánek"
+}

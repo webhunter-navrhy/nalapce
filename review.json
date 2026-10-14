@@ -1,0 +1,15 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Sekce Kam to máte od domu (PC buňky 5–6, mobil buňka 6): šest plných oranžových cedulí pod sebou tvoří na mobilu dlouhý, křiklavý blok a na PC přebíjí plánek. Na 390 px navíc popisek „Chalupská slať“ koliduje s popiskem kruhu „2 km“. Oprava: plnou oranžovou nechat jen u nejbližšího cíle (Jezerní slať), ostatní cedule udělat jako obrysové nebo krémové s oranžovou šipkou. Na mobilu je zkrátit na jeden řádek (název + km, bez podtitulku) a popisky kruhů posunout na opačnou stranu os, aby se nepřekrývaly s cíli.",
+    "Hero na PC (buňka 1): fotka zasněženého domu, nejsilnější vizuál webu, zabírá jen pravou polovinu. Pod ní a vlevo zůstává prázdný béžový pruh, takže hero působí jako běžný split ze šablony. Přepínač Zima/Léto vizuálně nic nemění. Oprava: fotku natáhnout k pravému a hornímu okraji (pod hlavičku, výška aspoň 85vh) a text nechat ve sloupci vlevo. Přepínač Zima/Léto napojit na výměnu hero fotky (zima-dum ↔ leto-dum) i textu pod ním, jinak ho odstranit.",
+    "Sekce V zimě / V létě (PC buňka 6, mobil buňka 7) a Apartmány (PC buňka 3–4): neaktivní sezóna má šedý text s nízkým kontrastem a vypadá jako zakázaná. Text uvádí „čtyři apartmány Stela, Viktorie, Sofie a Richard“, karty ale ukazují jen dva typy (pro 4 a pro 2) a brief počet označuje jako nejasný. Oprava: obě sezóny psát plným kontrastem a aktivní odlišit jen oranžovou linkou nahoře. Větu přepsat na „Apartmány pro 2 a pro 4 osoby“ a jména a počet doplnit až po ověření u klienta (v briefu je to v poli chybi)."
+  ],
+  "silne": [
+    "Koncept vychází přímo z místa: oranžové turistické cedule NP Šumava a plánek „Kam to máte od domu“ s doloženými vzdálenostmi z GPS. Šumava je vidět i v rozcestníku na fotce u Kvildy.",
+    "Paleta je poctivě odvozená z domu a okolí (krémová fasáda, zelené kachle, oranžové cedule). Typografie Young Serif + Public Sans je klidná, česká diakritika je v pořádku a mezery jsou velkorysé.",
+    "Všechna fakta (1 100 m n. m., 9,6/10 z 9 hodnocení na Hotely.cz, vybavení, příjezd a odjezd, poplatek) mají zdroj v briefu. Nic není vymyšlené, jen počet apartmánů je v briefu označený k ověření.",
+    "Konverze je jasná: v hlavičce je stále CTA „Poptat termín“, poptávkový formulář má termíny, počet osob a apartmán a kontakty jsou u formuláře i v patičce. QA je bez přetečení na všech šířkách a stránka má 0,6 MB."
+  ],
+  "verdikt": "Odeslat: návrh má skutečný šumavský koncept, pravdivý obsah a funguje na mobilu i na PC. Před odesláním je vhodné zklidnit oranžové cedule, zvětšit fotku v hero a sjednotit text o počtu apartmánů."
+}

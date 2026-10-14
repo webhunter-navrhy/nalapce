@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ site.lang }}" data-sezona="leto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="canonical" href="{{ site.url }}{{ cesta or '' }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+<meta property="og:url" content="{{ site.url }}{{ cesta or '' }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="preload" href="{{ base }}fonts/youngserif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<script>(function(){var m=new Date().getMonth();document.documentElement.dataset.sezona=(m>=5&&m<=8)?'leto':'zima';})();</script>
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="hlavicka">
+  <div class="hlavicka__in">
+    <a href="{{ url('') }}" class="znacka">{% if site.logo %}<img src="{{ base }}{{ site.logo }}" alt="{{ site.nazev }}" height="40">{% else %}<span class="znacka__jmeno">{{ site.nazev }}</span><span class="znacka__misto">Kvilda · Šumava</span>{% endif %}</a>
+    <nav class="menu" aria-label="Hlavní">
+      {% for n in site.nav %}<a href="{{ n.href }}">{{ n.text }}</a>{% endfor %}
+    </nav>
+    <a class="hlavicka__cta" href="#poptavka">Poptat termín</a>
+  </div>
+</header>
+<main id="obsah">
+{% block obsah %}{% endblock %}
+</main>
+<footer class="paticka">
+  <div class="paticka__in">
+    <p class="paticka__jmeno">{{ site.nazev }}</p>
+    <p>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
+    <p>Provozovatel {{ site.provozovatel }} · IČO {{ site.ico }}</p>
+    <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a> · <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+  </div>
+</footer>
+<script src="{{ asset('js/main.js') }}" defer></script>
+</body>
+</html>

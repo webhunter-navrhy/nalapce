@@ -1,0 +1,147 @@
+{% extends "_base.html" %}
+{% set titulek = 'Pension Na Lapce – apartmány na Kvildě, Šumava' %}
+{% set cesta = '' %}
+{% set p = data.pension %}
+{% block obsah %}
+<section class="hero">
+  <div class="hero__text">
+    <h1>Pension Na&nbsp;Lapce</h1>
+    <p class="hero__perex">Apartmány s&nbsp;kuchyní a&nbsp;saunou na klidném místě nad Kvildou, v&nbsp;nejvýše položené obci Česka. Běžky začínají za plotem, les hned za domem.</p>
+    <div class="sezona" role="group" aria-label="Roční doba">
+      <button type="button" data-sezona-volba="zima">Zima</button>
+      <button type="button" data-sezona-volba="leto">Léto</button>
+    </div>
+    <p class="hero__sezona" data-pro="zima">{{ p.sezony.zima.text }}</p>
+    <p class="hero__sezona" data-pro="leto">{{ p.sezony.leto.text }}</p>
+    <a class="tlacitko" href="#poptavka">Poptat volný termín</a>
+  </div>
+  <div class="hero__foto">
+    <div class="hero__vrstva" data-pro="zima">{{ img(p.sezony.zima.foto, p.sezony.zima.alt, sizes='(min-width: 60rem) 62vw, 100vw', eager=True) }}</div>
+    <div class="hero__vrstva" data-pro="leto">{{ img(p.sezony.leto.foto, p.sezony.leto.alt, sizes='(min-width: 60rem) 62vw, 100vw', eager=True) }}</div>
+    <div class="tabulka" aria-label="Poloha domu">
+      <span class="tabulka__nazev">1&nbsp;100&nbsp;m n.&nbsp;m.</span>
+      <span class="tabulka__vyska">Kvilda 80 · běžky přímo u&nbsp;pozemku</span>
+    </div>
+  </div>
+</section>
+
+<section class="dum" id="dum">
+  <div class="wrap dum__mrizka">
+    <div class="dum__text">
+      <h2>Rodinný dům nad Kvildou</h2>
+      <p>Velká rodinná chalupa stojí v&nbsp;klidné části nad obcí, na velkém pozemku pod lesem. Hodí se pro rodiny s&nbsp;dětmi, pro lyžaře a&nbsp;běžkaře v&nbsp;zimě a&nbsp;pro turisty a&nbsp;cyklisty v&nbsp;létě.</p>
+      <p>Každý apartmán má vlastní kuchyň, takže si vaříte, kdy chcete. Když se vařit nechce, restaurace jsou v&nbsp;centru Kvildy, nejbližší asi 700&nbsp;metrů od domu.</p>
+    </div>
+    <dl class="fakta">
+      {% for f in p.fakta %}<div><dt>{{ f.k }}</dt><dd>{{ f.v }}</dd></div>{% endfor %}
+    </dl>
+  </div>
+  <div class="wrap dum__fotky">
+    {{ img('zima-dum-les.jpg', 'Pension Na Lapce pod zasněženým smrkovým lesem nad Kvildou', sizes='(min-width: 76rem) 76rem, 100vw') }}
+  </div>
+</section>
+
+<section class="apartmany" id="apartmany">
+  <div class="wrap">
+    <div class="apartmany__hlava">
+      <h2>Apartmány</h2>
+      <p>Prostorné apartmány pro dva i&nbsp;pro čtyři, pojmenované <span class="jmena">Stela, Viktorie, Sofie a&nbsp;Richard</span>. Dřevo, bílé stěny, velká okna. V&nbsp;každém je obývací pokoj s&nbsp;televizí a&nbsp;plně vybavená kuchyň.</p>
+    </div>
+    <div class="galerie">
+      <figure class="galerie__hlavni">{{ img('kamna.jpg', 'Zelená kachlová kamna s plotnou v kuchyni', sizes='(min-width: 60rem) 50vw, 100vw') }}<figcaption>Kachlová kamna s&nbsp;plotnou</figcaption></figure>
+      <figure>{{ img('podkrovi.jpg', 'Podkrovní pokoj s dřevěným stropem, postelí a proutěnými křesly', sizes='(min-width: 60rem) 26vw, 50vw') }}</figure>
+      <figure>{{ img('kuchyn.jpg', 'Kuchyň s dřevěnou linkou, troubou a lednicí', sizes='(min-width: 60rem) 26vw, 50vw') }}</figure>
+    </div>
+    <div class="apartmany__info">
+      {% for t in p.typy %}<div class="karta"><h3>{{ t.nazev }}</h3><p>{{ t.detail }}</p></div>{% endfor %}
+      <div class="karta karta--seznam"><h3>V&nbsp;kuchyni</h3><ul class="seznam">{% for k in p.kuchyn %}<li>{{ k }}</li>{% endfor %}</ul></div>
+      <div class="karta karta--seznam"><h3>V&nbsp;domě</h3><ul class="seznam">{% for k in p.vybaveni %}<li>{{ k }}</li>{% endfor %}<li>sauna pro hosty zdarma</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="okoli" id="okoli">
+  <div class="wrap">
+    <div class="okoli__hlava">
+      <h2>Kam to máte od domu</h2>
+      <p>Dům je uprostřed plánku, cíle leží na skutečné světové straně. Vzdálenosti jsou vzdušnou čarou, po cestách je to o&nbsp;kus dál.</p>
+    </div>
+    <div class="okoli__mrizka">
+      <figure class="planek">
+        <svg viewBox="-6 -6 412 412" role="img" aria-labelledby="planek-popis">
+          <title id="planek-popis">Plánek okolí: Pension Na Lapce uprostřed, okolní cíle podle světové strany a vzdálenosti</title>
+          <circle cx="200" cy="200" r="50" class="planek__kruh"/>
+          <circle cx="200" cy="200" r="100" class="planek__kruh"/>
+          <circle cx="200" cy="200" r="150" class="planek__kruh"/>
+          <text x="196" y="263" text-anchor="end" class="planek__km">2 km</text>
+          <text x="196" y="313" text-anchor="end" class="planek__km">4 km</text>
+          <text x="196" y="363" text-anchor="end" class="planek__km">6 km</text>
+          <line x1="200" y1="14" x2="200" y2="386" class="planek__osa"/>
+          <line x1="14" y1="200" x2="386" y2="200" class="planek__osa"/>
+          <text x="200" y="10" class="planek__sever" text-anchor="middle">S</text>
+          {% for c in data.okoli.cile %}
+          <g class="planek__cil" data-cil="{{ loop.index }}">
+            <line x1="200" y1="200" x2="{{ c.x }}" y2="{{ c.y }}"/>
+            <circle cx="{{ c.x }}" cy="{{ c.y }}" r="5"/>
+            <text x="{{ c.lx }}" y="{{ c.ly }}" text-anchor="{{ c.anchor }}">{{ c.nazev }}</text>
+          </g>
+          {% endfor %}
+          <g class="planek__dum"><rect x="191" y="194" width="18" height="14"/><path d="M187 196 L200 184 L213 196 Z"/></g>
+          <text x="200" y="226" text-anchor="middle" class="planek__dumtext">Na Lapce</text>
+        </svg>
+      </figure>
+      <ul class="smerovky" role="list">
+        {% for c in data.okoli.cile %}
+        <li class="smerovka {{ 'smerovka--vlevo' if c.vlevo else 'smerovka--vpravo' }}" data-cil="{{ loop.index }}" tabindex="0">
+          <span class="smerovka__nazev">{{ c.nazev }}</span>
+          <span class="smerovka__km">{{ c.km }}&nbsp;km</span>
+          <span class="smerovka__popis">{{ c.popis }} · {{ c.smer }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="sezony">
+      {% for k in ['zima', 'leto'] %}{% set s = p.sezony[k] %}
+      <div class="sezony__blok" data-blok="{{ k }}">
+        <h3>{{ s.nadpis }}</h3>
+        <p>{{ s.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="kvilda" id="kvilda">
+  <div class="wrap kvilda__mrizka">
+    <figure class="kvilda__foto">{{ img('rozcestnik.jpg', 'Zasněžený rozcestník lyžařské trasy se směry Filipova Huť a Modrava', sizes='(min-width: 60rem) 40vw, 100vw') }}</figure>
+    <div class="kvilda__text">
+      <h2>Kvilda, nejvýš položená obec Česka</h2>
+      <p>Kvilda patří k&nbsp;hlavním turistickým centrům Šumavy. Všechno potřebné je kousek od domu:</p>
+      <ul class="seznam seznam--dva">{% for k in p.kvilda %}<li>{{ k }}</li>{% endfor %}</ul>
+      <p class="kvilda__dal">Kašperské Hory asi 25&nbsp;km, Vimperk asi 23&nbsp;km.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="poptavka" id="poptavka">
+  <div class="wrap poptavka__mrizka">
+    <div class="poptavka__text">
+      <h2>Poptat volný termín</h2>
+      <p>Napište, kdy a v&nbsp;kolika lidech chcete přijet. Ozveme se s&nbsp;volnými apartmány a&nbsp;cenou.</p>
+      <div class="hodnoceni">
+        <p class="hodnoceni__cislo">{{ p.hodnoceni.celkem }}<span>/10</span></p>
+        <p class="hodnoceni__popis">Průměr z&nbsp;{{ p.hodnoceni.pocet }} hodnocení hostů na <a href="{{ p.hodnoceni.url }}" rel="noopener">{{ p.hodnoceni.zdroj }}</a>. Hosté v&nbsp;recenzích chválí klid, polohu pod lesem a&nbsp;milé majitele. Čistota a&nbsp;komfort 10&nbsp;z&nbsp;10.</p>
+      </div>
+      <dl class="kontakt">
+        <div><dt>E-mail</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></dd></div>
+        <div><dt>Adresa</dt><dd>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</dd></div>
+        <div><dt>GPS</dt><dd><a href="https://mapy.cz/zakladni?q=49.019991N%2C13.575591E" rel="noopener">49.019991 N, 13.575591 E</a></dd></div>
+      </dl>
+      <p class="poptavka__pozn">Poplatek z&nbsp;pobytu 25&nbsp;Kč za osobu a&nbsp;noc (od 18&nbsp;let) se platí zvlášť.</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

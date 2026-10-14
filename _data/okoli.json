@@ -1,0 +1,83 @@
+{
+ "cile": [
+  {
+   "nazev": "Jezerní slať",
+   "km": "2,2",
+   "azimut": 345,
+   "smer": "S",
+   "vlevo": true,
+   "x": 185.8,
+   "y": 146.9,
+   "popis": "Rašeliniště s vyhlídkovou plošinou",
+   "lx": 195,
+   "ly": 150,
+   "anchor": "start"
+  },
+  {
+   "nazev": "Horská Kvilda",
+   "km": "4,4",
+   "azimut": 343,
+   "smer": "S",
+   "vlevo": true,
+   "x": 167.8,
+   "y": 94.8,
+   "popis": "Osada na pláni severně od Kvildy",
+   "lx": 158,
+   "ly": 99,
+   "anchor": "end"
+  },
+  {
+   "nazev": "Filipova Huť",
+   "km": "4,3",
+   "azimut": 283,
+   "smer": "Z",
+   "vlevo": true,
+   "x": 95.3,
+   "y": 175.8,
+   "popis": "Horská osada směrem k Modravě",
+   "lx": 95,
+   "ly": 162,
+   "anchor": "middle"
+  },
+  {
+   "nazev": "Pramen Vltavy",
+   "km": "5,2",
+   "azimut": 192,
+   "smer": "J",
+   "vlevo": true,
+   "x": 173.0,
+   "y": 327.2,
+   "popis": "Místo, kde začíná Vltava",
+   "lx": 163,
+   "ly": 332,
+   "anchor": "end"
+  },
+  {
+   "nazev": "Modrava",
+   "km": "5,8",
+   "azimut": 274,
+   "smer": "Z",
+   "vlevo": true,
+   "x": 55.4,
+   "y": 189.9,
+   "popis": "Obec v srdci Národního parku Šumava",
+   "lx": 38,
+   "ly": 213,
+   "anchor": "start"
+  },
+  {
+   "nazev": "Chalupská slať",
+   "km": "6,6",
+   "azimut": 110,
+   "smer": "V",
+   "vlevo": false,
+   "x": 355.0,
+   "y": 256.4,
+   "popis": "Rašelinné jezero u Borových Lad",
+   "lx": 362,
+   "ly": 282,
+   "anchor": "end"
+  }
+ ],
+ "zdroj": "Vzdálenosti vzdušnou čarou z GPS domu (49.019991 N, 13.575591 E) a souřadnic OpenStreetMap."
+}
